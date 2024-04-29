@@ -64,24 +64,44 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
-1. Using Laravel framework for this assignment
-2. Use Laravel Auth for Register and Login Users (Laravel "laravel/ui" package used)
--- composer require laravel/ui
--- php artisan ui bootstrap
--- npm install
--- npm run dev
--- php artisan ui bootstrap --auth
--- npm install
--- npm run dev
-3. Install Laravel's encryption package  
+
+# Laravel application
+1. git clone https://github.com/udayveersingh/encrypted_messages.git
+
+2. rename .env.example file to .env
+
+3. create MySql database and setup database settings in .env file
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=encrypted_messages
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+4. Run composer install command
+
+5. Run  php artisan migrate command
+
+6. Run application using command: php artisan serve
+
+Used Packages :   Laravel's encryption package  
 -- composer require illuminate/encryption
-4. Create a model for messages: 
+
+7. Created a model for messages: 
 -- php artisan make:model Message -m (allready created in code)
-5. Define the message schema in the migration file and run migrations: 
+
+8. Defined the message schema in the migration file and run migrations: 
 -- php artisan migrate 
-6. Create a controller for handling message operations: 
+
+9. Created a controller for handling message operations: 
 -- php artisan make:controller MessageController  (allready created in code)
-7. In the Message model, define attributes like text, recipient, created_at, and expiry
-8. In the MessageController, create methods for storing encrypted messages
-9. Create a method in MessageController to read and decrypt messages
+
+10. In the Message model, define attributes like text, recipient, created_at, and expiry
+
+11. In the MessageController, create methods for storing encrypted messages
+
+12. Create a method in MessageController to read and decrypt messages
+
 # encrypted_messages
