@@ -84,3 +84,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 7. In the Message model, define attributes like text, recipient, created_at, and expiry
 8. In the MessageController, create methods for storing encrypted messages
 9. Create a method in MessageController to read and decrypt messages
+# encrypted_messages
